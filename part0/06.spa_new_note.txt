@@ -1,0 +1,23 @@
+note over browser:
+user types something 
+in the input and 
+pushes submit button
+end note
+
+note over browser:
+Gets the input value,
+adds it to the noteList
+and sends it to server.
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa {note: somevalue}
+
+note over server
+saves the new note
+end note
+
+server-->browser: HTTP Code 201 {"message":"note created"}
+
+note over browser
+logs the response message
+end note

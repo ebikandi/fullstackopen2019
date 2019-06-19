@@ -1,6 +1,6 @@
 note over browser:
 user types something 
-in theinput and 
+in the input and 
 pushes submit button
 end note
 
